@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import { fetchPost, deletePost } from '../actions';
 
 class PostsShow extends Component {
+
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.fetchPost(id);
   }
 
-  onDeleteclick() {
+  onDeleteClick() {
     const { id } = this.props.match.params;
     this.props.deletePost(id, () => {
       this.props.history.push('/');
