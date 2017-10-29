@@ -19,6 +19,7 @@ class PostsNew extends Component {
             etc etc
           */
         />
+        {field.meta.error}
       </div>
     );
   }
