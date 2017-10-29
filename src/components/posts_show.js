@@ -14,7 +14,7 @@ class PostsShow extends Component {
         Posts Show!
       </div>
     );
-  };
+  }
 }
 
 function mapStateToProps({ posts }, ownProps) {
