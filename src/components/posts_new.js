@@ -19,7 +19,7 @@ class PostsNew extends Component {
             etc etc
           */
         />
-        {field.meta.error}
+        {field.meta.touched ? field.meta.error : ''}
       </div>
     );
   }
